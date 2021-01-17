@@ -63,6 +63,7 @@ module.exports = {
         client.publish(uri+'/commands/media/previous');
     },
     toggleDisplay:function(state){
+        state.toLowerCase();
         if (state == "on" || state == "off"){
             client.publish(uri+'/commands/displays/'+state);
         }

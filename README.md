@@ -10,16 +10,16 @@ npm install iotlink-client --save
 ```
 If you have IOT Link installed and setup the package will grab MQTT credentials from the configuartion.yaml file this means there is no need to input credentials in your project.
 
-#Commands
+# Commands
 ```javascript
 const iotLink = require('iotlink-client');
 ```
 
-##Send Notification
+## Send Notification
 ```javascript
 iotLink.sendNotification('Title Of Message','Contents Of Message')
 ```
-##Computer Controls
+## Computer Controls
 ```javascript
 //Lock
 iotLink.lockComputer()
@@ -32,7 +32,7 @@ iotLink.logOffComputer()
 //Hibernate
 iotLink.hibernateComputer()
 ```
-##Media Controls
+## Media Controls
 ```javascript
 //Play / Pause
 iotLink.toggleMedia()
@@ -44,7 +44,7 @@ iotLink.nextSong()
 iotLink.previousSong()
 ```
 
-##Other
+## Other
 ```javascript
 //Toggle Display State can be on or off
 iotLink.toggleDisplay('state');

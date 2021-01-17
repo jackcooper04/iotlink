@@ -1,7 +1,7 @@
 # IOT Link
 ## A NPM Package For IOT Link control
 
-#Setup
+# Setup
 Install and Setup IOT Link [Here](https://iotlink.gitlab.io/)
 
 

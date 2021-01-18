@@ -1,5 +1,5 @@
 # IOT Link
-## A NPM Package For IOT Link control
+## An NPM Package For IOT Link control
 
 # Setup
 Install and Setup IOT Link [Here](https://iotlink.gitlab.io/)
@@ -8,13 +8,15 @@ Install and Setup IOT Link [Here](https://iotlink.gitlab.io/)
 ```
 npm install iotlink-client --save
 ```
-If you have IOT Link installed and setup the package will grab MQTT credentials from the configuartion.yaml file this means there is no need to input credentials in your project.
+
 
 # Commands
 ```javascript
 const iotLink = require('iotlink-client');
-```
+iotLink.initialize({host:"MQTTIP",port:1883,username:null,password:null},'MyPC')
 
+```
+If You leave the object empty it will attempt to grab information from the configuartion file from IOTLink otherwise it will throw an error. If you leave the device name blank it will default to the current device name.
 ## Send Notification
 ```javascript
 iotLink.sendNotification('Title Of Message','Contents Of Message')

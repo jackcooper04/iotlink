@@ -6,13 +6,13 @@ Install and Setup IOT Link [Here](https://iotlink.gitlab.io/)
 
 
 ```
-npm install iotlink-client --save
+npm install iotlink --save
 ```
 
 
 # Commands
 ```javascript
-const iotLink = require('iotlink-client');
+const iotLink = require('iotlink');
 iotLink.initialize({host:"MQTTIP",port:1883,username:null,password:null},'MyPC')
 
 ```

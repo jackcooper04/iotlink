@@ -160,13 +160,13 @@ module.exports = {
         }
 
     },
-    openApplication: function (path) {
+    openApplication: function (path,args) {
         var pathArray = path.split("\\");
         pathArray.pop();
         var pathString = pathArray.join("\\")
         var body = {
             command: path,
-            args: "",
+            args: args,
             path: pathString,
             user: "",
             visible: true,

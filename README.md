@@ -51,7 +51,7 @@ iotLink.previousSong()
 //Toggle Display State can be on or off
 iotLink.toggleDisplay('state');
 //Open Application 
-iotLink.openApplication('path')
+iotLink.openApplication('path','args')
 ```
 Path needs to be full path to application for example:
 C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
